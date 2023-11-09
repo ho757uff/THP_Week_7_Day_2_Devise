@@ -1,15 +1,26 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* Custom styles that complement Bootstrap */
+
+/* Change body background to pink */
+body {
+    background-color: #ffc0cb; /* This sets the background to a pink color */
+    font-family: Arial, sans-serif; /* Only if you want to override Bootstrap's default font */
+}
+
+/* Add custom box-shadow to Bootstrap's container or card and set grey background */
+.container, .card {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa; /* Bootstrap's default grey for cards and navbar */
+}
+
+/* If you want to override Bootstrap's button color for a specific class or for all buttons */
+.btn-custom {
+    background-color: #55c7f2;
+    color: #ffffff;
+}
+
+/* If you have a specific link style that differs from Bootstrap */
+.custom-link {
+    color: #55c7f2;
+}
+
+/* Additional custom styles if needed */
